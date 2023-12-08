@@ -1,0 +1,117 @@
+/* Resetting default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  background: #fffffe;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo-container img {
+  max-width: 100%;
+}
+
+.form-container {
+  background: #fffffe;
+  width: 527px;
+  margin-bottom: 20px;
+}
+
+.title,
+.input-field label,
+.login-button,
+.alternative-login span,
+.auth-buttons button {
+  font-family: "PT Sans Caption", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.input-field {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000113;
+  border-radius: 4px;
+}
+
+.login-button,
+.auth-buttons button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.login-button {
+  background-color: #000113;
+  color: white;
+}
+
+.registration-link,
+.alternative-login {
+  text-align: center;
+  font-size: 14px;
+  color: #0a0a0a;
+  margin-top: 20px;
+}
+
+.registration-link a {
+  color: #000113;
+  text-decoration: none;
+}
+
+.registration-link a:hover {
+  text-decoration: underline;
+}
+
+.auth-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.google-btn,
+.facebook-btn {
+  width: 48%;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.google-btn {
+  background-color: #dd4b39;
+  color: white;
+}
+
+.facebook-btn {
+  background-color: #3b5998;
+  color: white;
+}
