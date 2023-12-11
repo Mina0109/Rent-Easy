@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>View Lease Agreements - RentEasy</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Include the necessary scripts for PDF generation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">
+      <img src="logo2.png" alt="RentEasy Logo" height="100" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="Landlord.php">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="viewlease.html">View All Agreements</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Manage</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faq.html">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Tenant</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">View Disputes</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Profile
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">My Profile</a>
+            <a class="dropdown-item" href="#">Settings</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="index.html">Logout</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <h1 class="mb-4">Lease Agreements</h1>
+
+    <!-- Form for landlord and tenant email input -->
+    <form method="POST" action="viewlease_handler.php" class="mb-4">
+      <div class="form-group">
+        <label for="landlord_email">Landlord Email:</label>
+        <input type="text" id="landlord_email" name="landlord_email" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="tenant_email">Tenant Email:</label>
+        <input type="text" id="tenant_email" name="tenant_email" class="form-control" />
+      </div>
+      <button type="submit" class="btn btn-primary">View Lease Agreements</button>
+    </form>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Add the script for handling HTML to PDF conversion -->
+  <script>
+    document.getElementById("exportPdf").addEventListener("click", function () {
+      // Function to export as PDF
+      var element = document.body;
+      html2pdf(element);
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+/* Custom styles for RentEasy Dashboard */
+
+/* Apply the navigation bar color */
+.navbar {
+  background-color: #e7a899 !important; /* Custom color for the navbar */
+}
+
+/* Make the logo bigger and more prominent */
+.navbar-brand img {
+  height: auto;
+  max-height: 100px; /* Adjust the size of the logo */
+  width: auto;
+}
+
+/* Style the buttons with the specified color */
+.btn-primary {
+  background-color: #85baa1 !important; /* Custom color for buttons */
+  border-color: #85baa1; /* Make the border the same color */
+}
+
+/* Change the hover state color to a slightly darker shade for the buttons */
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #729987 !important; /* Darker shade for the button hover state */
+  border-color: #729987; /* Border color to match the button hover state */
+}
+
+/* Additional styling enhancements */
+/* Typography improvements for better readability */
+body {
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
+/* Improved padding and margin for a cleaner layout */
+.container,
+.jumbotron {
+  padding: 2rem;
+}
+
+/* Custom styles for the dropdown menu to match the navbar */
+.dropdown-menu {
+  background-color: #85baa1;
+}
+
+/* More distinct active state for nav items */
+.nav-link.active,
+.nav-link:hover {
+  background-color: #85baa1;
+  border-radius: 0.25rem;
+}
+
+/* Style adjustments for mobile views */
+@media (max-width: 768px) {
+  .navbar-brand img {
+    max-height: 40px; /* Smaller logo for mobile devices */
+  }
+}
+
+/* Ensure to compile this after Bootstrap's CSS to override properly */
+/* Custom styles for the FAQ page */
+
+/* General Styling */
+body {
+  background-color: #f4f6f9; /* Light background for a clean look */
+  font-family: Arial, sans-serif;
+}
+
+/* FAQ Container */
+.container {
+  padding: 20px;
+}
+
+/* Accordion Styling */
+.card {
+  margin-bottom: 10px; /* Spacing between questions */
+}
+
+.card-header {
+  background-color: #e7a899; /* Light pink background for headers */
+  color: white;
+}
+
+.btn-link {
+  color: white; /* White text for the questions */
+  text-decoration: none;
+}
+
+.btn-link:hover,
+.btn-link:focus {
+  color: #ffffff; /* Slightly change color on hover/focus */
+}
+
+.card-body {
+  background-color: #ffffff; /* White background for the answer */
+  color: #333; /* Dark text for readability */
+}
+
+/* Titles */
+h1,
+h2 {
+  color: #333;
+}
+
+/* Adjustments for mobile screens */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+}
+.drag-drop-area {
+  border: 2px dashed #ccc;
+  min-height: 200px;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.elements-to-drag p {
+  cursor: pointer;
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  padding: 5px;
+  margin: 5px;
+}
+/* Styles for drag and drop interface */
+.drag-area,
+.drop-area {
+  border: 2px dashed #ddd;
+  padding: 20px;
+  margin: 15px 0;
+  min-height: 50px;
+  text-align: center;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.draggable-item {
+  padding: 10px 15px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Highlight the drop area when dragging over it */
+.drop-area.highlight {
+  background-color: #e9ecef;
+}
+
+/* Style for dropped items */
+.drop-area .draggable-item {
+  background-color: #85baa1;
+  color: white;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signupstyle.css" />
+    <title>RentEasy Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo-container">
+        <!-- Placeholder for Logo -->
+        <img src="logo2.png" alt="RentEasy Logo" />
+      </div>
+
+      <form action="login.php" method="post">
+        <!-- Start of the form tag -->
+        <div class="form-container">
+          <h2 class="title">Login to Your Account</h2>
+
+          <div class="input-field">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="user@example.com"
+            />
+          </div>
+
+          <div class="input-field">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+            />
+          </div>
+
+          <button type="submit" class="login-button">Log In</button>
+
+          <!-- Registration Link -->
+          <div class="registration-link">
+            <p>
+              Don't have an account? <a href="signup.html">Register here</a>
+            </p>
+          </div>
+
+          <div class="alternative-login">
+            <span>Or continue with</span>
+            <div class="auth-buttons">
+              <button class="google-btn">Google</button>
+              <button class="facebook-btn">Facebook</button>
+            </div>
+          </div>
+        </div>
+      </form>
+      <!-- End of the form tag -->
+    </div>
+  </body>
+</html>
